@@ -1,5 +1,5 @@
 # PBFT共识算法
-BFT（Practical Byzantine Fault Tolerance）是一种用于分布式系统的共识算法，旨在容忍拜占庭故障，即节点可能以任意恶意方式失效或发送错误信息。PBFT特别适用于需要高安全性和容错能力的环境，如区块链和分布式数据库。以下是PBFT的详细介绍：
+PBFT（Practical Byzantine Fault Tolerance）是一种用于分布式系统的共识算法，旨在容忍拜占庭故障，即节点可能以任意恶意方式失效或发送错误信息。PBFT特别适用于需要高安全性和容错能力的环境，如区块链和分布式数据库。以下是PBFT的详细介绍：
 
 PBFT的基本原理
 PBFT算法通过一组副本（replicas）来实现共识，系统可以容忍最多f个拜占庭故障节点，总节点数为3f+1。PBFT的共识过程分为三个主要阶段：预准备（Pre-prepare）、准备（Prepare）和提交（Commit）。
