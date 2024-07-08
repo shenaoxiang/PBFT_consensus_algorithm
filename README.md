@@ -18,11 +18,11 @@ PBFT算法通过一组副本（replicas）来实现共识，系统可以容忍�
 每个副本在收到2f+1个提交消息后，执行请求并返回结果给客户端。
 PBFT的流程图
 Pre-prepare：
-Primary -> Backup: <pre-prepare, v, n, d>
+Primary -> Backup: <pre-prepare, v, n, d>;
 Prepare：
-Backup -> All: <prepare, v, n, d, i>
+Backup -> All: <prepare, v, n, d, i>;
 Commit：
-Backup -> All: <commit, v, n, i>
+Backup -> All: <commit, v, n, i>;
 其中，v是视图编号，n是序列号，d是请求摘要，i是副本编号。
 
 优点
